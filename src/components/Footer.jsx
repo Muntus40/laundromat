@@ -18,12 +18,12 @@ export default function Footer() {
         </div>
         <div className="flex flex-col md:pt-4">
           {
-            footerLinkData.slice(0, 4).map(el => <Link target="_blank" rel="noopener noreferrer" key={el.id} to={el.link} className='text-white text-base md:text-lg hover:translate-x-2 py-1 px-2'>{el.title}</Link>)
+            footerLinkData.slice(0, 4).map(el => <Link key={el.id} to={el.link} className='text-white text-base md:text-lg hover:translate-x-2 py-1 px-2'>{el.title}</Link>)
           }
         </div>
         <div className="flex flex-col md:pt-4">
           {
-            footerLinkData.slice(4).map(el => <Link key={el.id} to={el.link} className='text-white text-base md:text-lg hover:translate-x-2 py-1 px-2'>{el.title}</Link>)
+            footerLinkData.slice(4).map(el => <Link target="_blank" rel="noopener noreferrer"  key={el.id} to={el.link} className='text-white text-base md:text-lg hover:translate-x-2 py-1 px-2'>{el.title}</Link>)
           }
         </div>
       </div>
